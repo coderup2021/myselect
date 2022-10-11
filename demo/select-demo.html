@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myselect demo</title>
+</head>
+<link rel="stylesheet" href="../dist/style/myselect.css">
+<script src="../dist/myselect.js"></script>
+<script>
+    function onSelectChange(){
+        console.log(event.target.value)
+    }
+</script>
+<body>
+   <select name="testSelect" onchange="onSelectChange()" my-select-trigger>
+    <option value="aaa">aaa</option>
+    <option value="ddd">ddd</option>
+    <option value="ccc">ccc</option>
+    <option value="zzz">zzz</option>
+   </select> 
+</body>
+<script>
+    new MySelect(document.querySelector("[my-select-trigger]"))
+</script>
+</html>

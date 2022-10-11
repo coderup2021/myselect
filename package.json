@@ -1,0 +1,17 @@
+{
+  "name": "my-select",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "html select, choices, support modify select option style",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf dist && mkdir dist",
+    "style": "cp -r src/style dist/",
+    "js": "cp src/myselect.js dist/myselect.js",
+    "build": "yarn clean && yarn js && yarn style"
+  }
+}
