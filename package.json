@@ -1,9 +1,19 @@
 {
-  "name": "my-select",
+  "name": "lj-select",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "description": "html select, choices, support modify select option style",
   "license": "MIT",
+  "keywords": [
+    "select",
+    "html",
+    "choice"
+  ], 
+  "homepage": "https://github.com/coderup2021/myselect",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coderup2021/myselect"
+  },
   "devDependencies": {
     "rimraf": "^3.0.2"
   },
